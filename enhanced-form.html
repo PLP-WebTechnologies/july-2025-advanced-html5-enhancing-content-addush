@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community Event Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px auto;
+      max-width: 900px;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header, main, section, footer {
+      margin-bottom: 2em;
+    }
+    h1, h2, h3 {
+      color: #2a4d69;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.6em;
+      text-align: left;
+    }
+    th {
+      background-color: #4b86b4;
+      color: white;
+    }
+    form {
+      background-color: #f4f7f8;
+      padding: 1em 2em 2em 2em;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1em;
+      padding: 1em 1.5em;
+    }
+    legend {
+      font-weight: bold;
+      color: #20435c;
+      padding: 0 6px;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3em;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+    input:invalid {
+      border-color: #e74c3c;
+      background-color: #fdecea;
+    }
+    input:valid {
+      border-color: #2ecc71;
+      background-color: #eafaf1;
+    }
+    button {
+      background-color: #2a4d69;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3b6ca8;
+    }
+    .media-section img, .media-section audio, .media-section video {
+      max-width: 100%;
+      height: auto;
+      margin-top: 0.5em;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Spring Community Festival 2025</h1>
+  <p>Join us for a fun-filled day of activities, food, and entertainment! Register below to participate in the events.</p>
+</header>
+
+<main>
+
+  <section aria-labelledby="events-list-heading">
+    <h2 id="events-list-heading">Upcoming Events</h2>
+    <p>Our festival features a variety of activities for all ages. Here are some highlights:</p>
+    <ul>
+      <li>Live Music Performances</li>
+      <li>Local Artisan Market</li>
+      <li>Family Fun Zone with Games</li>
+      <li>Food Trucks & Culinary Demos</li>
+      <li>Outdoor Yoga Sessions</li>
+    </ul>
+    <p>Event Schedule:</p>
+    <ol>
+      <li>10:00 AM - Opening Ceremony</li>
+      <li>11:00 AM - Yoga Class (Lawn Area)</li>
+      <li>12:30 PM - Artisan Market Opens</li>
+      <li>2:00 PM - Music Performance (Main Stage)</li>
+      <li>4:00 PM - Community Games</li>
+      <li>6:00 PM - Closing Remarks & Fireworks</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="ticket-pricing-heading">
+    <h2 id="ticket-pricing-heading">Ticket Types & Pricing</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ticket Type</th>
+          <th>Access Level</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General Admission</td>
+          <td>Access to all public areas and events</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>VIP Pass</td>
+          <td>Includes general admission + VIP lounge access & free drink</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Child (12 & under)</td>
+          <td>Free access to family fun zone and all activities</td>
+          <td>Free</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="media-section" aria-labelledby="media-heading">
+    <h2 id="media-heading">Festival Preview</h2>
+    <h3>Festival Photo</h3>
+    <img src="https://render.fineartamerica.com/images/rendered/medium/print/5.5/8/break/images/artworkimages/medium/1/palm-springs-retro-travel-poster-jim-zahniser.jpg" alt="Crowd enjoying the Spring Community Festival" />
+    
+    <h3>Festival Theme Song</h3>
+    <audio controls>
+      <source="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <section aria-labelledby="registration-form-heading">
+    <h2 id="registration-form-heading">Event Registration Form</h2>
+    <form action="#" method="post" novalidate>
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name <span aria-label="required">*</span></label>
+        <input 
+          type="text" 
+          id="fullname" 
+          name="fullname" 
+          placeholder="Your full name"
+          required 
+          minlength="3" 
+          maxlength="50" 
+          autocomplete="name" 
+        />
+
+        <label for="email">Email Address <span aria-label="required">*</span></label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="example@domain.com" 
+          required 
+          autocomplete="email" 
+        />
+
+        <label for="phone">Phone Number</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="123-456-7890" 
+          pattern="^\d{3}-\d{3}-\d{4}$" 
+          title="Enter phone as 123-456-7890"
+          autocomplete="tel"
+        />
+
+        <label for="birthdate">Date of Birth</label>
+        <input 
+          type="date" 
+          id="birthdate" 
+          name="birthdate" 
+          min="1900-01-01" 
+          max="2025-12-31" 
+          autocomplete="bday"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Ticket Selection</legend>
+
+        <label for="ticketType">Choose Ticket Type <span aria-label="required">*</span></label>
+        <select id="ticketType" name="ticketType" required>
+          <option value="" disabled selected>-- Please select --</option>
+          <option value="general">General Admission - $10</option>
+          <option value="vip">VIP Pass - $40</option>
+          <option value="child">Child (12 & under) - Free</option>
+        </select>
+
+        <label for="quantity">Number of Tickets <span aria-label="required">*</span></label>
+        <input 
+          type="number" 
+          id="quantity" 
+          name="quantity" 
+          min="1" 
+          max="10" 
+          value="1" 
+          required 
+          title="Enter a quantity from 1 to 10"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Additional Preferences</legend>
+
+        <label>Would you like to receive updates about future events? <span aria-label="required">*</span></label>
+        <input type="radio" id="updatesYes" name="updates" value="yes" required />
+        <label for="updatesYes">Yes</label>
+        <input type="radio" id="updatesNo" name="updates" value="no" />
+        <label for="updatesNo">No</label>
+
+        <label for="comments">Special Requests or Comments (optional)</label>
+        <textarea 
+          id="comments" 
+          name="comments" 
+          rows="4" 
+          maxlength="250" 
+          placeholder="Let us know if you have any special needs or requests."
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="agree">I agree to the <a href="#" target="_blank" rel="noopener">terms and conditions</a> of the event.</label>
+      </fieldset>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Spring Community Festival. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
